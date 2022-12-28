@@ -1,0 +1,56 @@
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
+  flex-direction: column;
+  height: 20vh;
+}
+
+.main {
+  height: auto;
+  flex-direction: column;
+}
+
+.article {
+  width: 80%;
+  margin-bottom: 30px;
+}
+
+.article-content {
+  flex-direction: column;
+}
+
+.btn-next {
+  width: 35%;
+  font-size: 1.5rem;
+}
+
+.footer {
+  padding: 3px;
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #000;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer a:hover {
+  color: #0284ff;
+}
+
+.footer .bi {
+  font-size: 1.8rem;
+  color: #000;
+}
+
+.footer .bi:hover {
+  font-size: 1.2rem;
+  color: #0284ff;
+}
+
+/*# sourceMappingURL=style.css.map */
