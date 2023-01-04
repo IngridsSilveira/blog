@@ -5,6 +5,7 @@ body {
 .header {
   flex-direction: column;
   height: 20vh;
+  color: #fff;
 }
 .main {
   height: auto;
@@ -25,18 +26,18 @@ body {
   padding: 3px;
   font-size: 1.4rem;
   font-style: italic;
-  color: #000;
+  color: #fff;
 }
 .footer a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 .footer a:hover {
   color: #0284ff;
 }
 .footer .bi {
   font-size: 1.8rem;
-  color: #000;
+  color: #fff;
 }
 .footer .bi:hover {
   font-size: 1.2rem;
