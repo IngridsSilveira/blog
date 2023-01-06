@@ -1,45 +1,68 @@
+@mixin flex {
+  flex-direction: column;
+}
 body {
   width: 100vw;
   height: 100vh;
 }
 .header {
-  flex-direction: column;
   height: 20vh;
-  color: #fff;
+  color: #e7e7e7;
+  background-color: #0068ca;
+  border-bottom-left-radius: 70px;
+}
+.header-icons,
+.header-content,
+.main,
+.article-content {
+  @include flex;
+}
+.header-icons .bi {
+  font-size: 1.8rem;
+  color: #e7e7e7;
+}
+.header-icons .bi:hover {
+  font-size: 1.2rem;
+  color: #000;
+}
+.btn {
+  width: 40%;
 }
 .main {
   height: auto;
-  flex-direction: column;
 }
 .article {
   width: 80%;
   margin-bottom: 30px;
 }
-.article-content {
-  flex-direction: column;
+.imgs {
+  width: 50%;
+  border-radius: 5px;
+}
+.imgs:hover {
+  cursor: pointer;
+  transform: scale(.9);
+  transition: ease-in-out .2s;
+}
+.linha {
+  border-top: 2px solid #888;
+  width: 79.5%;
+  margin-bottom: 8px;
+  height: 5px;
+  border-radius: 50%;
 }
 .btn-next {
   width: 35%;
   font-size: 1.5rem;
 }
 .footer {
-  padding: 3px;
-  font-size: 1.4rem;
-  font-style: italic;
-  color: #fff;
+  font-size: 1.2rem;
+  color: #e7e7e7;
 }
 .footer a {
   text-decoration: none;
-  color: #fff;
+  color: #e7e7e7;
 }
 .footer a:hover {
-  color: #0284ff;
-}
-.footer .bi {
-  font-size: 1.8rem;
-  color: #fff;
-}
-.footer .bi:hover {
-  font-size: 1.2rem;
   color: #0284ff;
 }
