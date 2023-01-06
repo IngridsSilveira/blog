@@ -1,15 +1,15 @@
 @mixin flex {
   flex-direction: column;
 }
+//VARIAVEIS
+$East: "East Sea Dokdo", cursive;
+$Rowdies: "Rowdies", cursive;
+$Ubuntu: "Ubuntu", sans-serif;
+$Yeon: "Yeon Sung", cursive;
+
 body {
   width: 100vw;
   height: 100vh;
-}
-.header {
-  height: 20vh;
-  color: #e7e7e7;
-  background-color: #0068ca;
-  border-bottom-left-radius: 70px;
 }
 .header-icons,
 .header-content,
@@ -17,52 +17,128 @@ body {
 .article-content {
   @include flex;
 }
-.header-icons .bi {
-  font-size: 1.8rem;
+.header {
+  height: 20vh;
   color: #e7e7e7;
-}
-.header-icons .bi:hover {
-  font-size: 1.2rem;
-  color: #000;
+  background-color: #0068ca;
+  border-bottom-left-radius: 90px;
+  border-bottom-right-radius: 90px;
+  .header-title {
+    font: {
+      family: $Rowdies;
+      size: 3rem;
+    }
+  }
+  .header-description {
+    font: {
+      family: arial;
+      weight: normal;
+      style: italic;
+    }
+  }
+  .header-icons .bi {
+    font-size: 1.8rem;
+    color: #e7e7e7;
+  }
+  .header-icons .bi:hover {
+    color: #000;
+  }
 }
 .btn {
   width: 40%;
 }
+.section {
+  margin-top: 40px;
+  margin-bottom: 100px;
+  @include flex;
+  .section-title {
+    font: {
+      family: $Ubuntu;
+      weight: normal;
+    }
+    letter-spacing: -2px;
+  }
+  .imgs-section {
+    border-radius: 10px;
+    width: 800px;
+    height: 520px;
+  }
+}
 .main {
   height: auto;
-}
-.article {
-  width: 80%;
-  margin-bottom: 30px;
-}
-.imgs {
-  width: 50%;
-  border-radius: 5px;
-}
-.imgs:hover {
-  cursor: pointer;
-  transform: scale(.9);
-  transition: ease-in-out .2s;
-}
-.linha {
-  border-top: 2px solid #888;
-  width: 79.5%;
-  margin-bottom: 8px;
-  height: 5px;
-  border-radius: 50%;
-}
-.btn-next {
-  width: 35%;
-  font-size: 1.5rem;
+  .article {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+  .imgs {
+    width: 400px;
+    border-radius: 5px;
+    height: 300px;
+    &:hover {
+      cursor: pointer;
+      transform: scale(0.9);
+      transition: ease-in-out 0.2s;
+    }
+  }
+  .article-title {
+    font: {
+      family: $Yeon;
+      size: 2.5rem;
+    }
+    letter-spacing: 2px;
+  }
+  .article-info {
+    background-color: #eee;
+    width: 280px;
+    padding: 3px;
+    border-radius: 5px;
+  }
+  .article-description {
+    width: 65%;
+    font: {
+      size: 1rem;
+      family: $Ubuntu;
+    }
+  }
+  .article-btn {
+    background-color: #0284ff;
+    padding: 6px;
+    width: 105px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    &:hover {
+      background-color: #0068ca;
+    }
+  }
+  .fa-arrow-right {
+    font: {
+      size: 0.9rem;
+    }
+    color: #fff;
+    margin-left: 5px;
+  }
+  .linha {
+    border-top: 2px solid #888;
+    width: 79.5%;
+    margin-bottom: 8px;
+    height: 5px;
+    border-radius: 50%;
+  }
+  .btn-next {
+    width: 35%;
+    font-size: 1.5rem;
+  }
 }
 .footer {
   font-size: 1.2rem;
   color: #e7e7e7;
-}
-.footer a {
-  text-decoration: none;
-  color: #e7e7e7;
-}
-.footer a:hover {
-  color: #0284ff;
+  a {
+    text-decoration: none;
+    color: #e7e7e7;
+    &:hover {
+      color: #0284ff;
+    }
+  }
 }
