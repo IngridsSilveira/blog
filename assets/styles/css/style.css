@@ -14,8 +14,7 @@ body {
   height: 20vh;
   color: #e7e7e7;
   background-color: #0068ca;
-  border-bottom-left-radius: 90px;
-  border-bottom-right-radius: 90px;
+  border-bottom-left-radius: 20px;
 }
 .header .header-title {
   font-family: "Rowdies", cursive;
@@ -38,20 +37,83 @@ body {
   width: 40%;
 }
 
-.section {
+.section-main {
+  width: 100vw;
+}
+.section-main .section-carousel {
   margin-top: 40px;
   margin-bottom: 100px;
+  width: 100%;
   flex-direction: column;
 }
-.section .section-title {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: normal;
-  letter-spacing: -2px;
-}
-.section .imgs-section {
+.section-main .section-carousel .imgs-section {
   border-radius: 10px;
-  width: 800px;
+  width: 100%;
   height: 520px;
+}
+.section-main .aside-alinhamento {
+  flex-direction: column;
+  width: 30%;
+}
+.section-main .aside-alinhamento .aside {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 80%;
+  height: auto;
+  margin-top: 20px;
+  padding: 10px;
+  box-shadow: 1px 0px 1px #000;
+}
+.section-main .aside-alinhamento .aside .aside-title {
+  font-family: "Yeon Sung", cursive;
+}
+.section-main .aside-alinhamento .aside .aside-description {
+  font-family: "Ubuntu", sans-serif;
+}
+.section-main .aside-alinhamento .aside .aside-quadrados {
+  flex-wrap: wrap;
+  width: 350px;
+  cursor: pointer;
+}
+.section-main .aside-alinhamento .aside .aside-quadrados a {
+  text-decoration: none;
+}
+.section-main .aside-alinhamento .aside .aside-quadrados .quadrados {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  width: 150px;
+  height: 50px;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 5px;
+}
+.section-main .aside-alinhamento .aside .aside-quadrados .quadrados:hover {
+  background-color: rgba(29, 26, 26, 0.7529411765);
+}
+.section-main .aside-alinhamento .aside .aside-quadrados .azul {
+  background-color: #0068ca;
+}
+.section-main .aside-alinhamento .aside .aside-quadrados .instagram {
+  background-color: #d42575;
+}
+.section-main .aside-alinhamento .aside .aside-quadrados .youtube {
+  background-color: #fa0001;
+}
+.section-main .aside-alinhamento .aside .aside-quadrados .github {
+  background-color: #000;
+}
+.section-main .aside-alinhamento .aside .aside-quadrados .twitter {
+  background-color: #00aced;
+}
+.section-main .aside-alinhamento .aside .aside-quadrados .span-title {
+  font-size: 0.9rem;
+  margin-left: 5px;
+}
+.section-main .aside-alinhamento .aside .aside-quadrados .fa {
+  color: #fff;
+  font-size: 2rem;
 }
 
 .main {
