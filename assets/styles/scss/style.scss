@@ -9,7 +9,8 @@ $Yeon: "Yeon Sung", cursive;
 
 body {
   width: 100vw;
-  height: 100vh;
+  height: auto;
+  @include flex;
 }
 .header-icons,
 .header-content,
@@ -18,10 +19,10 @@ body {
   @include flex;
 }
 .header {
-  height: 20vh;
+  height: 12vh;
   color: #e7e7e7;
   background-color: #0068ca;
-  border-bottom-left-radius: 20px;
+  margin: 0 auto;
   .header-title {
     font: {
       family: $Rowdies;
@@ -35,41 +36,34 @@ body {
       style: italic;
     }
   }
-  .header-icons .bi {
-    font-size: 1.8rem;
-    color: #e7e7e7;
-  }
-  .header-icons .bi:hover {
-    color: #000;
-  }
 }
-.btn {
-  width: 40%;
-}
-.section-main {
-  width: 100vw;
+.section {
+  width: 80%;
+  margin-top: 30px;
+  background-color: #ffffff;
+  padding: 0 20px 60px 20px;
   .section-carousel {
-    margin-top: 40px;
-    margin-bottom: 100px;
-    width: 100%;
+    width: 70%;
     @include flex;
     .imgs-section {
-      border-radius: 10px;
       width: 100%;
-      height: 520px;
+      height: 600px;
     }
   }
   .aside-alinhamento {
-    @include flex;
-    width: 30%;
+    padding: 20px;
     .aside {
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      width: 80%;
-      height: auto;
-      margin-top: 20px;
-      padding: 10px;
-      box-shadow: 1px 0px 1px #000;
+      width: 350px;
+      height: 70vh;
+      .sobre {
+        margin-bottom: 30px;
+        .form {
+          width: 100%;
+          .btn {
+            width: 50%;
+          }
+        }
+      }
       .aside-title {
         font: {
           family: $Yeon;
@@ -94,7 +88,7 @@ body {
           border-radius: 5px;
           width: 150px;
           height: 50px;
-          margin-top: 10px;
+          margin-top: 20px;
           margin-right: 10px;
           padding: 5px;
           &:hover {
@@ -130,14 +124,17 @@ body {
 }
 .main {
   height: auto;
+  background-color: #ffffff;
+  width: 80%;
   .article {
-    width: 80%;
-    margin-bottom: 30px;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 10px;
   }
   .imgs {
     width: 400px;
     border-radius: 5px;
-    height: 300px;
+    height: 250px;
     &:hover {
       cursor: pointer;
       transform: scale(0.9);
@@ -184,9 +181,9 @@ body {
     margin-left: 5px;
   }
   .linha {
-    border-top: 2px solid #888;
-    width: 79.5%;
-    margin-bottom: 8px;
+    border-top: 1px solid #000;
+    width: 100%;
+    margin-bottom: 30px;
     height: 5px;
     border-radius: 50%;
   }
@@ -196,6 +193,7 @@ body {
   }
 }
 .footer {
+  margin-top: 20px;
   font-size: 1.2rem;
   color: #e7e7e7;
   a {
@@ -204,5 +202,83 @@ body {
     &:hover {
       color: #0284ff;
     }
+  }
+}
+
+//RESPONSIVO
+@media screen and (min-width: 0) and (max-width: 475px) {
+  .header {
+    background-color: green !important;
+    .header-title {
+      font-size: 1.8rem;
+      margin-top: 15px;
+    }
+    .header-description{
+      font-size: medium;
+    }
+  }
+  .section {
+    @include flex;
+    .section-carousel {
+      width: 100%;
+      .imgs-section {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .aside-alinhamento {
+      padding: 5px;
+      .aside {
+        width: 100%;
+      }
+      .aside-title {
+        margin-top: 15px;
+      }
+    }
+  }
+  .main {
+    .article {
+      @include flex;
+      height: auto;
+      padding-bottom: 10px;
+    }
+    .article:nth-child(1){
+      padding-bottom: 100px;
+    }
+    .article:nth-child(3),
+    .article:nth-child(7){
+      padding-bottom: 80px;
+    }
+    .imgs {
+      width: 100%;
+      height: 150px;
+    }
+    .article-content {
+      width: 100%;
+      height: 250px;
+    }
+    .article-title {
+      font-size: 1.8rem;
+      margin-top: 10px;
+    }
+    .article-description {
+      width: 100%;
+      font-size: .8rem;
+    }
+    .btn-next {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 476px) and (max-width: 768px) {
+  .header {
+    background-color: orange !important;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1375px) {
+  .header {
+    background-color: red !important;
   }
 }

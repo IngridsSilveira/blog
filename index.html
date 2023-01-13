@@ -23,28 +23,16 @@
         rel="stylesheet">
 </head>
 
-<body class="bg-light">
-    <header class="header container-fluid d-flex align-items-center justify-content-center">
-        <div class="header-content d-flex align-items-center justify-content-center">
+<body class="bg-light d-flex align-items-center justify-content-center">
+    <header class="header container-fluid">
+        <div class="header-content text-center">
             <h1 class="header-title">Top K-Dramas</h1>
-            <p class="header-description">Fique por dentro das novidades do mundo dos doramas.</p>
-            <form class="header-form d-flex align-items-center justify-content-center">
-                <input type="email" name="email" id="email" class="header-input form-control me-2"
-                    placeholder="Enter e-mail">
-                <button class="btn btn-dark">Inscreva-se</button>
-            </form>
-        </div>
-        <div class="header-icons d-flex ms-4">
-            <a class="icons" target="_blank" href="https://github.com/IngridsSilveira"><i class="bi bi-github"></i></a>
-            <a class="icons" target="_blank" href="https://www.instagram.com/dev_ingrid/"><i
-                    class="bi bi-instagram"></i></a>
-            <a class="icons" target="_blank" href="https://www.linkedin.com/in/ingridssilveira/"><i
-                    class="bi bi-linkedin"></i></a>
+            <p class="header-description ">Fique por dentro das novidades do mundo dos doramas.</p>
         </div>
     </header>
 
-    <section class="section-main d-flex align-items-center justify-content-around">
-        <section class="section-carousel d-flex align-items-center justify-content-center">
+    <section class="section d-flex justify-content-between">
+        <section class="section-carousel d-flex">
             <h1 class="mb-5"></h1>
             <div id="banner" class="carousel slide" data-bs-ride="carousel">
                 <div id="indicadores" class="carousel-indicators">
@@ -73,12 +61,18 @@
 
         <div class="aside-alinhamento d-flex">
             <aside class="aside">
-                <h1 class="aside-title">Sobre</h1>
-                <p class="text-center aside-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Consequatur suscipit modi, tempore repudiandae officiis, voluptatem enim nostrum sed aliquam eum non
-                    sit doloremque porro facilis debitis assumenda officia, tenetur molestias.</p>
-            </aside>
-            <aside class="aside">
+                <div class="sobre">
+                    <h1 class="aside-title">Sobre</h1>
+                    <p class="text-center aside-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Consequatur suscipit modi, tempore repudiandae officiis, voluptatem enim nostrum sed aliquam eum
+                        non
+                        sit doloremque porro facilis debitis assumenda officia, tenetur molestias.</p>
+                    <form class="form d-flex align-items-center justify-content-center">
+                        <input type="email" name="email" id="email" class="header-input form-control me-2"
+                            placeholder="Enter e-mail">
+                        <button class="btn btn-primary">Inscreva-se</button>
+                    </form>
+                </div>
                 <h1 class="aside-title">Social</h1>
                 <div class="aside-quadrados d-flex align-items-center justify-content-center">
                     <a href="#">
@@ -102,7 +96,17 @@
                                     class="span-title">LinkedIn</span></i></div>
                     </a>
                     <a href="#">
+                        <div class="quadrados youtube"><i class="fa fa-pinterest"><span
+                                    class="span-title">Pinterest</span></i>
+                        </div>
+                    </a>
+                    <a href="#">
                         <div class="quadrados github"><i class="fa fa-github"><span class="span-title">Github</span></i>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="quadrados azul"><i class="fa fa-telegram"><span
+                                    class="span-title">Telegram</span></i>
                         </div>
                     </a>
                 </div>
@@ -111,8 +115,7 @@
 
     </section>
 
-    <main class="main container-fluid d-flex align-items-center justify-content-center p-5 bg-light">
-        <div class="linha mb-3"></div>
+    <main class="main container-fluid p-5">
         <article class="article d-flex align-items-center justify-content-center">
             <img class="imgs me-4" src="assets/images/alquimia.jpg" alt="capa alquimia das almas">
             <div class="article-content d-flex">
@@ -164,11 +167,22 @@
             </div>
         </article>
         <div class="linha"></div>
-        <button class="btn btn-primary btn-next mt-4">Próximo <i class="fa-solid fa-arrow-right"></i> </button>
+        <div class="d-flex justify-content-center">
+            <button class="btn btn-primary btn-next mt-4">Próximo <i class="fa-solid fa-arrow-right"></i> </button>
+        </div>
     </main>
+
     <footer class="footer container-fluid d-flex align-items-center justify-content-center bg-dark">
-        <p class="mt-2">Desenvolvido por <a target="_blank" href="ttps://github.com/IngridsSilveira">Ingrid Souza 🔥</a>
+        <p class="mt-2 me-3">Feito por <a target="_blank" href="ttps://github.com/IngridsSilveira">Dev_Ingrid</a>
         </p>
+        <div class="d-flex mb-2">
+            <a class="icons me-2" target="_blank" href="https://github.com/IngridsSilveira"><i
+                    class="bi bi-github"></i></a>
+            <a class="icons me-2" target="_blank" href="https://www.instagram.com/dev_ingrid/"><i
+                    class="bi bi-instagram"></i></a>
+            <a class="icons" target="_blank" href="https://www.linkedin.com/in/ingridssilveira/"><i
+                    class="bi bi-linkedin"></i></a>
+        </div>
     </footer>
 </body>
 

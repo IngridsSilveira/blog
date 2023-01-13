@@ -1,6 +1,7 @@
 body {
   width: 100vw;
-  height: 100vh;
+  height: auto;
+  flex-direction: column;
 }
 
 .header-icons,
@@ -11,10 +12,10 @@ body {
 }
 
 .header {
-  height: 20vh;
+  height: 12vh;
   color: #e7e7e7;
   background-color: #0068ca;
-  border-bottom-left-radius: 20px;
+  margin: 0 auto;
 }
 .header .header-title {
   font-family: "Rowdies", cursive;
@@ -25,108 +26,103 @@ body {
   font-weight: normal;
   font-style: italic;
 }
-.header .header-icons .bi {
-  font-size: 1.8rem;
-  color: #e7e7e7;
-}
-.header .header-icons .bi:hover {
-  color: #000;
-}
 
-.btn {
-  width: 40%;
-}
-
-.section-main {
-  width: 100vw;
-}
-.section-main .section-carousel {
-  margin-top: 40px;
-  margin-bottom: 100px;
-  width: 100%;
-  flex-direction: column;
-}
-.section-main .section-carousel .imgs-section {
-  border-radius: 10px;
-  width: 100%;
-  height: 520px;
-}
-.section-main .aside-alinhamento {
-  flex-direction: column;
-  width: 30%;
-}
-.section-main .aside-alinhamento .aside {
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.section {
   width: 80%;
-  height: auto;
-  margin-top: 20px;
-  padding: 10px;
-  box-shadow: 1px 0px 1px #000;
+  margin-top: 30px;
+  background-color: #ffffff;
+  padding: 0 20px 60px 20px;
 }
-.section-main .aside-alinhamento .aside .aside-title {
+.section .section-carousel {
+  width: 70%;
+  flex-direction: column;
+}
+.section .section-carousel .imgs-section {
+  width: 100%;
+  height: 600px;
+}
+.section .aside-alinhamento {
+  padding: 20px;
+}
+.section .aside-alinhamento .aside {
+  width: 350px;
+  height: 70vh;
+}
+.section .aside-alinhamento .aside .sobre {
+  margin-bottom: 30px;
+}
+.section .aside-alinhamento .aside .sobre .form {
+  width: 100%;
+}
+.section .aside-alinhamento .aside .sobre .form .btn {
+  width: 50%;
+}
+.section .aside-alinhamento .aside .aside-title {
   font-family: "Yeon Sung", cursive;
 }
-.section-main .aside-alinhamento .aside .aside-description {
+.section .aside-alinhamento .aside .aside-description {
   font-family: "Ubuntu", sans-serif;
 }
-.section-main .aside-alinhamento .aside .aside-quadrados {
+.section .aside-alinhamento .aside .aside-quadrados {
   flex-wrap: wrap;
   width: 350px;
   cursor: pointer;
 }
-.section-main .aside-alinhamento .aside .aside-quadrados a {
+.section .aside-alinhamento .aside .aside-quadrados a {
   text-decoration: none;
 }
-.section-main .aside-alinhamento .aside .aside-quadrados .quadrados {
+.section .aside-alinhamento .aside .aside-quadrados .quadrados {
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
   width: 150px;
   height: 50px;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-right: 10px;
   padding: 5px;
 }
-.section-main .aside-alinhamento .aside .aside-quadrados .quadrados:hover {
+.section .aside-alinhamento .aside .aside-quadrados .quadrados:hover {
   background-color: rgba(29, 26, 26, 0.7529411765);
 }
-.section-main .aside-alinhamento .aside .aside-quadrados .azul {
+.section .aside-alinhamento .aside .aside-quadrados .azul {
   background-color: #0068ca;
 }
-.section-main .aside-alinhamento .aside .aside-quadrados .instagram {
+.section .aside-alinhamento .aside .aside-quadrados .instagram {
   background-color: #d42575;
 }
-.section-main .aside-alinhamento .aside .aside-quadrados .youtube {
+.section .aside-alinhamento .aside .aside-quadrados .youtube {
   background-color: #fa0001;
 }
-.section-main .aside-alinhamento .aside .aside-quadrados .github {
+.section .aside-alinhamento .aside .aside-quadrados .github {
   background-color: #000;
 }
-.section-main .aside-alinhamento .aside .aside-quadrados .twitter {
+.section .aside-alinhamento .aside .aside-quadrados .twitter {
   background-color: #00aced;
 }
-.section-main .aside-alinhamento .aside .aside-quadrados .span-title {
+.section .aside-alinhamento .aside .aside-quadrados .span-title {
   font-size: 0.9rem;
   margin-left: 5px;
 }
-.section-main .aside-alinhamento .aside .aside-quadrados .fa {
+.section .aside-alinhamento .aside .aside-quadrados .fa {
   color: #fff;
   font-size: 2rem;
 }
 
 .main {
   height: auto;
+  background-color: #ffffff;
+  width: 80%;
 }
 .main .article {
-  width: 80%;
-  margin-bottom: 30px;
+  width: 100%;
+  height: 350px;
+  margin-bottom: 10px;
 }
 .main .imgs {
   width: 400px;
   border-radius: 5px;
-  height: 300px;
+  height: 250px;
 }
 .main .imgs:hover {
   cursor: pointer;
@@ -167,9 +163,9 @@ body {
   margin-left: 5px;
 }
 .main .linha {
-  border-top: 2px solid #888;
-  width: 79.5%;
-  margin-bottom: 8px;
+  border-top: 1px solid #000;
+  width: 100%;
+  margin-bottom: 30px;
   height: 5px;
   border-radius: 50%;
 }
@@ -179,6 +175,7 @@ body {
 }
 
 .footer {
+  margin-top: 20px;
   font-size: 1.2rem;
   color: #e7e7e7;
 }
@@ -188,6 +185,79 @@ body {
 }
 .footer a:hover {
   color: #0284ff;
+}
+
+@media screen and (min-width: 0) and (max-width: 475px) {
+  .header {
+    background-color: green !important;
+  }
+  .header .header-title {
+    font-size: 1.8rem;
+    margin-top: 15px;
+  }
+  .header .header-description {
+    font-size: medium;
+  }
+  .section {
+    flex-direction: column;
+  }
+  .section .section-carousel {
+    width: 100%;
+  }
+  .section .section-carousel .imgs-section {
+    width: 100%;
+    height: auto;
+  }
+  .section .aside-alinhamento {
+    padding: 5px;
+  }
+  .section .aside-alinhamento .aside {
+    width: 100%;
+  }
+  .section .aside-alinhamento .aside-title {
+    margin-top: 15px;
+  }
+  .main .article {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 10px;
+  }
+  .main .article:nth-child(1) {
+    padding-bottom: 100px;
+  }
+  .main .article:nth-child(3),
+  .main .article:nth-child(7) {
+    padding-bottom: 80px;
+  }
+  .main .imgs {
+    width: 100%;
+    height: 150px;
+  }
+  .main .article-content {
+    width: 100%;
+    height: 250px;
+  }
+  .main .article-title {
+    font-size: 1.8rem;
+    margin-top: 10px;
+  }
+  .main .article-description {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+  .main .btn-next {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 476px) and (max-width: 768px) {
+  .header {
+    background-color: orange !important;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1375px) {
+  .header {
+    background-color: red !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
