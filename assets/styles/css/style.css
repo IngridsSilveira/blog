@@ -2,6 +2,8 @@ body {
   width: 100vw;
   height: auto;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-icons,
@@ -9,6 +11,8 @@ body {
 .main,
 .article-content {
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .header {
@@ -29,13 +33,13 @@ body {
 
 .section {
   width: 80%;
-  margin-top: 30px;
   background-color: #ffffff;
   padding: 0 20px 60px 20px;
 }
 .section .section-carousel {
-  width: 70%;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .section .section-carousel .imgs-section {
   width: 100%;
@@ -73,6 +77,7 @@ body {
 }
 .section .aside-alinhamento .aside .aside-quadrados .quadrados {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
@@ -114,15 +119,20 @@ body {
   background-color: #ffffff;
   width: 80%;
 }
+.main .teste {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
 .main .article {
-  width: 100%;
-  height: 350px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 .main .imgs {
   width: 400px;
   border-radius: 5px;
-  height: 250px;
+  height: 300px;
 }
 .main .imgs:hover {
   cursor: pointer;
@@ -187,19 +197,18 @@ body {
   color: #0284ff;
 }
 
-@media screen and (min-width: 0) and (max-width: 475px) {
-  .header {
-    background-color: green !important;
-  }
+@media screen and (max-width: 767px) {
   .header .header-title {
     font-size: 1.8rem;
     margin-top: 15px;
   }
   .header .header-description {
-    font-size: medium;
+    font-size: 0.9rem;
   }
   .section {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .section .section-carousel {
     width: 100%;
@@ -214,20 +223,34 @@ body {
   .section .aside-alinhamento .aside {
     width: 100%;
   }
+  .section .aside-alinhamento .aside .aside-quadrados {
+    width: auto;
+  }
+  .section .aside-alinhamento .aside .aside-quadrados .quadrados {
+    width: 130px;
+    height: 40px;
+  }
+  .section .aside-alinhamento .aside .aside-quadrados .quadrados .fa {
+    font-size: 1rem;
+  }
+  .section .aside-alinhamento .form {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .section .aside-alinhamento .form .btn {
+    margin-top: 5px;
+  }
   .section .aside-alinhamento .aside-title {
     margin-top: 15px;
   }
   .main .article {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: auto;
     padding-bottom: 10px;
-  }
-  .main .article:nth-child(1) {
-    padding-bottom: 100px;
-  }
-  .main .article:nth-child(3),
-  .main .article:nth-child(7) {
-    padding-bottom: 80px;
+    width: auto;
   }
   .main .imgs {
     width: 100%;
@@ -235,11 +258,14 @@ body {
   }
   .main .article-content {
     width: 100%;
-    height: 250px;
   }
   .main .article-title {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-top: 10px;
+  }
+  .main .article-info {
+    font-size: 0.9rem;
+    width: 250px;
   }
   .main .article-description {
     width: 100%;
@@ -249,14 +275,31 @@ body {
     width: 100%;
   }
 }
-@media screen and (min-width: 476px) and (max-width: 768px) {
-  .header {
-    background-color: orange !important;
+@media screen and (min-width: 768px) and (max-width: 1050px) {
+  .section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .section .section-carousel {
+    width: 100%;
+  }
+  .main .article {
+    height: auto;
+  }
+  .main .imgs {
+    width: 300px;
+  }
+  .main .article-title {
+    font-size: 2rem;
+  }
+  .main .article-description {
+    width: auto;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1375px) {
-  .header {
-    background-color: red !important;
+@media screen and (min-width: 1051px) {
+  .article-content {
+    align-items: flex-start;
   }
 }
 
