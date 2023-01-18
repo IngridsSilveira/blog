@@ -63,6 +63,11 @@ body {
             width: 50%;
           }
         }
+        #incorreto {
+          margin-left: 8px;
+          color: red;
+
+        }
       }
       .aside-title {
         font: {
@@ -266,6 +271,7 @@ body {
     }
     .article-content {
       width: 100%;
+      align-items: flex-start;
     }
     .article-title {
       font-size: 1.5rem;
@@ -297,6 +303,9 @@ body {
     }
     .imgs {
       width: 300px;
+    }
+    .article-content {
+      align-items: flex-start;
     }
     .article-title {
       font-size: 2rem;

@@ -61,6 +61,10 @@ body {
 .section .aside-alinhamento .aside .sobre .form .btn {
   width: 50%;
 }
+.section .aside-alinhamento .aside .sobre #incorreto {
+  margin-left: 8px;
+  color: red;
+}
 .section .aside-alinhamento .aside .aside-title {
   font-family: "Yeon Sung", cursive;
 }
@@ -258,6 +262,7 @@ body {
   }
   .main .article-content {
     width: 100%;
+    align-items: flex-start;
   }
   .main .article-title {
     font-size: 1.5rem;
@@ -289,6 +294,9 @@ body {
   }
   .main .imgs {
     width: 300px;
+  }
+  .main .article-content {
+    align-items: flex-start;
   }
   .main .article-title {
     font-size: 2rem;
