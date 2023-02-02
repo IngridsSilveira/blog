@@ -11,8 +11,12 @@
     background-color: transparent;
   }
 }
+.section {
+  width: 100%;
+  padding: 0;
+}
 .picture {
-  width: 75%;
+  width: 100%;
   text-align: center;
   font-style: italic;
   font-size: smaller;
@@ -32,5 +36,17 @@
   }
 }
 .section-content {
-    @include flex;
+  margin-top: 30px;
+  flex-direction: column;
+  .paragrafo {
+    width: 77%;
+    font-family: sans-serif;
+  }
+}
+.img-resenha {
+  width: 70% !important;
+  border-radius: 5px;
+}
+.trailer {
+  flex-direction: column;
 }
