@@ -1,0 +1,318 @@
+body {
+  width: 100vw;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-icons,
+.header-content,
+.main,
+.article-content {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  height: 12vh;
+  background-color: #0068ca;
+  color: #e7e7e7;
+  margin: 0 auto;
+}
+.header a {
+  text-decoration: none;
+}
+.header .header-title {
+  color: #e7e7e7;
+  font-family: "Rowdies", cursive;
+  font-size: 3rem;
+}
+.header .header-description {
+  font-family: arial;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.section {
+  width: 80%;
+  background-color: #ffffff;
+  padding: 0 20px 60px 20px;
+}
+.section .section-carousel {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section .section-carousel .imgs-section {
+  width: 100%;
+  height: 600px;
+}
+.section .aside-alinhamento {
+  padding: 20px;
+}
+.section .aside-alinhamento .aside {
+  width: 350px;
+  height: 70vh;
+}
+.section .aside-alinhamento .aside .sobre {
+  margin-bottom: 30px;
+}
+.section .aside-alinhamento .aside .sobre .form {
+  width: 100%;
+}
+.section .aside-alinhamento .aside .sobre .form .btn {
+  width: 50%;
+}
+.section .aside-alinhamento .aside .sobre #incorreto {
+  margin-left: 8px;
+  color: red;
+}
+.section .aside-alinhamento .aside .aside-title {
+  font-family: "Yeon Sung", cursive;
+}
+.section .aside-alinhamento .aside .aside-description {
+  font-family: "Ubuntu", sans-serif;
+}
+.section .aside-alinhamento .aside .aside-quadrados {
+  flex-wrap: wrap;
+  width: 350px;
+  cursor: pointer;
+}
+.section .aside-alinhamento .aside .aside-quadrados a {
+  text-decoration: none;
+}
+.section .aside-alinhamento .aside .aside-quadrados .quadrados {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  width: 150px;
+  height: 50px;
+  margin-top: 20px;
+  margin-right: 10px;
+  padding: 5px;
+}
+.section .aside-alinhamento .aside .aside-quadrados .quadrados:hover {
+  background-color: rgba(29, 26, 26, 0.7529411765);
+}
+.section .aside-alinhamento .aside .aside-quadrados .azul {
+  background-color: #0068ca;
+}
+.section .aside-alinhamento .aside .aside-quadrados .instagram {
+  background-color: #d42575;
+}
+.section .aside-alinhamento .aside .aside-quadrados .youtube {
+  background-color: #fa0001;
+}
+.section .aside-alinhamento .aside .aside-quadrados .github {
+  background-color: #000;
+}
+.section .aside-alinhamento .aside .aside-quadrados .twitter {
+  background-color: #00aced;
+}
+.section .aside-alinhamento .aside .aside-quadrados .span-title {
+  font-size: 0.9rem;
+  margin-left: 5px;
+}
+.section .aside-alinhamento .aside .aside-quadrados .fa {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.main {
+  height: auto;
+  background-color: #ffffff;
+  width: 80%;
+}
+.main .teste {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.main .article {
+  margin-bottom: 30px;
+}
+.main .imgs {
+  width: 400px;
+  border-radius: 5px;
+  height: 300px;
+}
+.main .imgs:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+  transition: ease-in-out 0.2s;
+}
+.main .article-title {
+  font-family: "Yeon Sung", cursive;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+.main .article-info {
+  background-color: #eee;
+  width: 280px;
+  padding: 3px;
+  border-radius: 5px;
+}
+.main .article-description {
+  width: 65%;
+  font-size: 1rem;
+  font-family: "Ubuntu", sans-serif;
+}
+.main .article-btn {
+  background-color: #0284ff;
+  padding: 6px;
+  width: 105px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+.main .article-btn:hover {
+  background-color: #0068ca;
+}
+.main .fa-arrow-right {
+  font-size: 0.9rem;
+  color: #fff;
+  margin-left: 5px;
+}
+.main .linha {
+  border-top: 1px solid #000;
+  width: 100%;
+  margin-bottom: 30px;
+  height: 5px;
+  border-radius: 50%;
+}
+.main .btn-next {
+  width: 35%;
+  font-size: 1.5rem;
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #e7e7e7;
+}
+.footer a {
+  text-decoration: none;
+  color: #e7e7e7;
+}
+.footer a:hover {
+  color: #0284ff;
+}
+
+@media screen and (max-width: 767px) {
+  .header .header-title {
+    font-size: 1.8rem;
+    margin-top: 15px;
+  }
+  .header .header-description {
+    font-size: 0.9rem;
+  }
+  .section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .section .section-carousel {
+    width: 100%;
+  }
+  .section .section-carousel .imgs-section {
+    width: 100%;
+    height: auto;
+  }
+  .section .aside-alinhamento {
+    padding: 5px;
+  }
+  .section .aside-alinhamento .aside {
+    width: 100%;
+  }
+  .section .aside-alinhamento .aside .aside-quadrados {
+    width: auto;
+  }
+  .section .aside-alinhamento .aside .aside-quadrados .quadrados {
+    width: 130px;
+    height: 40px;
+  }
+  .section .aside-alinhamento .aside .aside-quadrados .quadrados .fa {
+    font-size: 1rem;
+  }
+  .section .aside-alinhamento .form {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .section .aside-alinhamento .form .btn {
+    margin-top: 5px;
+  }
+  .section .aside-alinhamento .aside-title {
+    margin-top: 15px;
+  }
+  .main .article {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding-bottom: 10px;
+    width: auto;
+  }
+  .main .imgs {
+    width: 100%;
+    height: 150px;
+  }
+  .main .article-content {
+    width: 100%;
+    align-items: flex-start;
+  }
+  .main .article-title {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  .main .article-info {
+    font-size: 0.9rem;
+    width: 250px;
+  }
+  .main .article-description {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+  .main .btn-next {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1050px) {
+  .section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .section .section-carousel {
+    width: 100%;
+  }
+  .main .article {
+    height: auto;
+  }
+  .main .imgs {
+    width: 300px;
+  }
+  .main .article-content {
+    align-items: flex-start;
+  }
+  .main .article-title {
+    font-size: 2rem;
+  }
+  .main .article-description {
+    width: auto;
+  }
+}
+@media screen and (min-width: 1051px) {
+  .article-content {
+    align-items: flex-start;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
