@@ -211,6 +211,7 @@ body {
 //RESPONSIVO
 @media screen and (max-width: 767px) {
   .header {
+    height: auto;
     .header-title {
       font-size: 1.8rem;
       margin-top: 15px;
@@ -232,6 +233,7 @@ body {
       padding: 5px;
       .aside {
         width: 100%;
+        height: auto;
         .aside-quadrados {
           width: auto;
           .quadrados {

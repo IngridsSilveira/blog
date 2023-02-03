@@ -44,6 +44,7 @@
 .section-content .paragrafo {
   width: 77%;
   font-family: sans-serif;
+  line-height: 1.6;
 }
 
 .img-resenha {
@@ -53,6 +54,42 @@
 
 .trailer {
   flex-direction: column;
+}
+
+iframe {
+  width: 560px;
+  height: 315px;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    height: auto;
+  }
+  .main .article-title {
+    font-size: 2.5rem;
+  }
+  .picture .imagem, .section .aside-alinhamento .aside {
+    height: auto;
+  }
+  .section-content .paragrafo {
+    width: 100%;
+  }
+  .img-resenha {
+    width: auto !important;
+    margin-top: 20px;
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .main .article-title {
+    font-size: 2rem;
+  }
+  .main .article-info {
+    width: 200px;
+  }
 }
 
 /*# sourceMappingURL=content.css.map */
